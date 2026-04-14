@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Travel Recommendation</title>
+</head>
+<body>
+
+<h1>Travel Recommendation Website</h1>
+
+<nav>
+    <a href="#">Home</a> |
+    <a href="#">About Us</a> |
+    <a href="#">Contact Us</a>
+</nav>
+
+<br>
+
+<input type="text" id="search" placeholder="Search here...">
+
+<button onclick="search()">Search</button>
+<button onclick="clearSearch()">Clear</button>
+
+<script>
+function search() {
+    alert("Search clicked!");
+}
+
+function clearSearch() {
+    document.getElementById("search").value = "";
+}
+</script>
+
+</body>
+</html>
