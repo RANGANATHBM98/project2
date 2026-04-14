@@ -1,69 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Travel Recommendation</title>
+    <title>My Website</title>
 </head>
 <body>
 
-<h1>Travel Recommendation Website</h1>
+<h1>Welcome to My Website</h1>
 
-<!-- Navigation Bar -->
-<nav>
-    <a href="#">Home</a> |
-    <a href="#">About Us</a> |
-    <a href="#">Contact Us</a>
-</nav>
+<h2>Home</h2>
+<p>This is the home page.</p>
 
-<br><br>
+<h2>About Us</h2>
+<p>This website is created for my GitHub project.</p>
 
-<input type="text" id="search" placeholder="Search here...">
-
-<button onclick="showResults()">Search</button>
-<button onclick="clearSearch()">Clear</button>
-
-<hr>
-
-<!-- Results Section -->
-<div id="results"></div>
-
-<script>
-function showResults() {
-    let input = document.getElementById("search").value.toLowerCase();
-    let output = "";
-
-    if (input.includes("beach")) {
-        output = `
-        <h2>Beaches</h2>
-        <img src="https://via.placeholder.com/150"><p>Goa Beach</p>
-        <img src="https://via.placeholder.com/150"><p>Maldives Beach</p>
-        `;
-    }
-    else if (input.includes("temple")) {
-        output = `
-        <h2>Temples</h2>
-        <img src="https://via.placeholder.com/150"><p>Tirupati Temple</p>
-        <img src="https://via.placeholder.com/150"><p>Golden Temple</p>
-        `;
-    }
-    else if (input.includes("country")) {
-        output = `
-        <h2>Countries</h2>
-        <img src="https://via.placeholder.com/150"><p>India</p>
-        <img src="https://via.placeholder.com/150"><p>USA</p>
-        `;
-    }
-    else {
-        output = "<p>No results found</p>";
-    }
-
-    document.getElementById("results").innerHTML = output;
-}
-
-function clearSearch() {
-    document.getElementById("search").value = "";
-    document.getElementById("results").innerHTML = "";
-}
-</script>
+<h2>Contact Us</h2>
+<p>Email: example@gmail.com</p>
 
 </body>
 </html>
