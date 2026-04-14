@@ -28,7 +28,30 @@ function showResults() {
         <img src="https://picsum.photos/200?random=2">
         <p>Maldives Beach</p>
         `;
-    } else {
+    } 
+    else if (input.includes("temple")) {
+        document.getElementById("results").innerHTML = `
+        <h2>Temples</h2>
+
+        <img src="https://picsum.photos/200?random=3">
+        <p>Tirupati Temple</p>
+
+        <img src="https://picsum.photos/200?random=4">
+        <p>Golden Temple</p>
+        `;
+    }
+    else if (input.includes("country")) {
+        document.getElementById("results").innerHTML = `
+        <h2>Countries</h2>
+
+        <img src="https://picsum.photos/200?random=5">
+        <p>India</p>
+
+        <img src="https://picsum.photos/200?random=6">
+        <p>USA</p>
+        `;
+    }
+    else {
         document.getElementById("results").innerHTML = "<p>No results found</p>";
     }
 }
