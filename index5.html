@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Travel Recommendation</title>
+</head>
+<body>
+
+<h1>Travel Recommendation Website</h1>
+
+<!-- Search -->
+<input type="text" id="search" placeholder="Search here...">
+<button onclick="showResults()">Search</button>
+
+<hr>
+
+<!-- Results -->
+<div id="results"></div>
+
+<script>
+function showResults() {
+    let input = document.getElementById("search").value.toLowerCase();
+    let output = "";
+
+    if (input.includes("beach")) {
+        output = `
+        <h2>Beaches</h2>
+
+        <img src="https://via.placeholder.com/200">
+        <p>Goa Beach</p>
+
+        <img src="https://via.placeholder.com/200">
+        <p>Maldives Beach</p>
+        `;
+    } 
+    else {
+        output = "<p>No results found</p>";
+    }
+
+    document.getElementById("results").innerHTML = output;
+}
+</script>
+
+</body>
+</html>
