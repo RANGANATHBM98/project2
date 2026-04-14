@@ -12,17 +12,30 @@
 
 <h2>About Us</h2>
 <p>We are a team working on web development projects.</p>
-<p>This website provides information about our work and helps team members collaborate.</p>
+<p>This website helps team members collaborate and learn.</p>
 
 <h3>Instructions for Team Members</h3>
 <ul>
 <li>Update code regularly</li>
 <li>Follow project guidelines</li>
-<li>Communicate with team members</li>
+<li>Communicate with team</li>
 </ul>
 
 <h2>Contact Us</h2>
 <p>Email: example@gmail.com</p>
+
+<form action="mailto:example@gmail.com" method="post" enctype="text/plain">
+    <label>Name:</label><br>
+    <input type="text" name="name"><br><br>
+
+    <label>Email:</label><br>
+    <input type="email" name="email"><br><br>
+
+    <label>Message:</label><br>
+    <textarea name="message"></textarea><br><br>
+
+    <input type="submit" value="Send">
+</form>
 
 </body>
 </html>
